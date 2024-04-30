@@ -1,11 +1,73 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Home Page</title> 
-    </head> 
-    <body> 
-        <h1>Welcome to the Home Page</h1>
-    </body>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home Page</title> 
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #c5cfd1;
+            }
+        nav {
+            background-color: #899293; 
+        }
+        .horizontal-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .horizontal-nav li {
+            display: inline-block;
+        }
+        .horizontal-nav li a {
+            display: block;
+            color: #e3e7e1; 
+            padding: 15px 20px; 
+            text-decoration: none;
+        }
+        .home-container {
+            background-color: #e3e7e1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head> 
+<nav>
+    <ul class="horizontal-nav">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+<body> 
+    <section id="home">
+        <h1>Welcome!</h1>
+        <div class="home-container">
+            <p>This is my Django web app that is woefully plain.</p>
+            <p>Seriously...the ugliness is actually causing me physical pain.</p>
+        </div>
+        
+        <div class="home-container">
+            <h2>My Portfolio</h2>  
+            <div class="section-container">
+                <h3>About Me</h3>  
+                <h5><a href="/about">Learn more about me &rarr;</a></h5>
+            </div>
+    
+            <div class="section-container">
+                <h3>My Work</h3> 
+                <h5><a href="/work">View my projects &rarr;</a></h5>
+            </div>
+    
+            <div class="section-container">
+                <h3>Contact Me</h3> 
+                <h5><a href="/contact">Get in touch &rarr;</a></h5>
+            </div>
+        </div>
+    </section>
+</body>
 </html>

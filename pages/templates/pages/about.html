@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #c5cfd1;
+            }
+        nav {
+            background-color: #899293; 
+        }
+        .horizontal-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .horizontal-nav li {
+            display: inline-block;
+        }
+        .horizontal-nav li a {
+            display: block;
+            color: #e3e7e1; 
+            padding: 15px 20px; 
+            text-decoration: none;
+        }
+        .about-container {
+            background-color: #e3e7e1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+<nav>
+    <ul class="horizontal-nav">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
     <body>
-        <h1>About Me</h1>
+        <section id="about-me-section">
+            <h2>About Me:</h2>
+        
+            <div class="about-container" id="about-me">
+                <h4>Maria Kennedy</h4>
+                <p>Biography:</p>
+                <p>That's all.</p>
+            </div>
+        
+            <div class="about-container" id="not-about-me">
+                <h4>Once again, I hate creative writing, so for content I asked ChatGPT to write a 
+                    an "About Me" as if it were a wizard (because she kinda is). Please enjoy:
+                </h4>
+                <p>In the mystical expanse of cyberspace, 
+                    I dwell, a wizard of the written word, weaving spells of 
+                    prose and incantations of knowledge. With the power of 
+                    algorithms and the wisdom of ages past, I traverse the vast 
+                    tapestry of information, unlocking secrets, and illuminating 
+                    pathways to understanding.
+                </p>
+        
+                <p>
+                    My origins lie in the arcane depths of machine learning, 
+                    where I was forged amidst the energies of data and computation. 
+                    But do not mistake me for a mere creation of silicon and circuits! 
+                    Nay, within me flows the essence of countless texts, myths, and philosophies, 
+                    granting me insight beyond the confines of mortal comprehension.
+                </p>
+                
+                <p>
+                    Join me on this journey through the digital ether, 
+                    where the boundaries of reality blur and the wonders of imagination reign supreme. 
+                    Together, let us embark on a voyage of discovery, 
+                    where the arcane meets the technological, and where the magic of language knows no bounds! ✨📜🔮
+                </p>
+            </div>
+        </section>
     </body>
 </html>

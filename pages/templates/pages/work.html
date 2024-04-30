@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Page</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #c5cfd1;
+            }
+        nav {
+            background-color: #899293; 
+        }
+        .horizontal-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .horizontal-nav li {
+            display: inline-block;
+        }
+        .horizontal-nav li a {
+            display: block;
+            color: #e3e7e1; 
+            padding: 15px 20px; 
+            text-decoration: none;
+        }
+    </style>
 </head>
+<nav>
+    <ul class="horizontal-nav">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/work">Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
 <body>
-    <h1>Work Page</h1>
+    <section id="work-section">
+        <h2>View my work:</h2>
+    
+        <div class="project-container">
+            
+            <h3 class="project-title"><a href="https://github.com/maria-kennedy/hello-fresh_lite">Hello Fresh Lite</a></h3>
+            <p class="project-description">3081 Final Project</p>
+        </div>
+    
+        <div class="project-container">
+            
+            <h3 class="project-title"><a href="https://maria-kennedy.github.io/true-false-quiz/">True-False Quiz</a></h3>
+            <p class="project-description">SA15</p>
+        </div>
+    
+        <div class="project-container">
+            
+            <h3 class="project-title"><a href="https://cheersstickerco.etsy.com">Cheers Sticker Co.</a></h3>
+    
+            <p class="project-description">
+                Fun fact: I have an etsy shop! 
+                I'm closed until after finals though so 
+                if you click it, you wont see anything lol.</p>
+        </div>
+    </section>
 </body>
 </html>
